@@ -1,0 +1,6 @@
+a=input("enter a value") 
+b=a[::-1]
+if(a==b):
+ Print("the value is palindrome") 
+else:
+ Print("the value is not a palindrome") 
