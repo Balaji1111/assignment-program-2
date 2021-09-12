@@ -1,0 +1,16 @@
+list=[ ]
+n=int(input("Enter the size of the list")) 
+print("enter the value one by one") 
+for i in range(n):
+ num=int(input()) 
+ list.append(num) 
+print(list) 
+a=0
+b=0
+for i in range(len(list)):
+ if (i%2==0):
+  a+= 1
+    else:
+        b += 1    
+print("Even numbers in the list: ", a)
+print("Odd numbers in the list: ", b)
