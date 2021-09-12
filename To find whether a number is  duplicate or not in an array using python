@@ -1,0 +1,12 @@
+list=[ ]
+n=int(input("Enter the size of the list")) 
+for i in range(n):
+ num=int(input()) 
+ list.append(num) 
+print(list) 
+a=int(input("enter a number to find")) 
+for  j  in range(n):
+ if(a==list[j]):
+  print ("dup") 
+ else:
+  print("not dup")
