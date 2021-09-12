@@ -1,0 +1,10 @@
+list=[ ]
+n=int(input("Enter how many number should be print as a Fibonacci ")) 
+first=0
+second=1
+for i in range(n):
+   list. append(first) 
+   tem=first
+   first=second
+   second=tem+first
+print(" The list of Fibonacci is:", list)
