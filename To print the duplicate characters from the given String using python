@@ -1,0 +1,7 @@
+a=input("enter a string") 
+b=[]
+for i in a:
+  c=a.count(i, 0,len(a)) 
+    if (c>1):
+       b.append(i) 
+ print("the duplicates are", b)
