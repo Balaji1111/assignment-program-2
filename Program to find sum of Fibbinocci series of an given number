@@ -1,0 +1,11 @@
+list=[]
+n=int(input ("enter how many Fibbinocci numbers to be added")) 
+first=0
+second=1
+for i in range(n):
+  list.append(first) 
+  tem=first
+  first=second
+  second=tem+second
+ print("the fibbinocci series is", list) 
+ print(" The sum of fibbinocci series is", second-1)
