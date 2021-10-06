@@ -1,0 +1,11 @@
+list=[]
+n=int(input("enter how many strings to be their ")) 
+for i in range(n) :
+  a=input(" Enter a string one by one")
+list.append(a) 
+print("the list is", list) 
+for j in range(n) :
+ small=min(list[j:]) 
+ index=list.index(small) 
+ list[j],list[index]=list[index], list[j]
+print("the sorted list of strings =", list)
