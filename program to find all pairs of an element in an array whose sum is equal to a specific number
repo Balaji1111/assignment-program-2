@@ -1,0 +1,18 @@
+list=[]
+n=int(input("enter how many strings to be their ")) 
+for i in range(n) :
+  a=int(input (" Enter a string one by one")) 
+  list.append(a) 
+print("the list is", list)
+s=int(input ("enter a value of sum of pairs to find")) 
+l=0
+r=len(list)-1
+while(l<=r):
+ if(list[l]+list[r]>s):
+   r=r-1
+ elif(list[l]+list[r]<s):
+   l=l+1
+ elif(list[l]+list[r]==s):
+ print("the sum of pairs are", list[l], list[r]) 
+ r=r-1
+ l=l+1
