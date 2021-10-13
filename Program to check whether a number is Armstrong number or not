@@ -1,0 +1,12 @@
+n=int(input("enter a number")) 
+a=int(input("enter how many number are thier in the above entered number")) 
+sum=0
+temp=n
+for i in range(0, a):
+  digit=temp%10
+  sum=sum+digit**a
+  temp=temp//10
+if (sum==n):
+   print ("the number is Armstrong number") 
+else:
+print ("not a Armstrong number")
