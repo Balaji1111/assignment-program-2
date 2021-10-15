@@ -1,7 +1,7 @@
-num=int(input ("enter a number")) 
+a=int(input ("enter a number")) 
 b=a*a
 rem=b%10
-if(rem=num):
+if(rem=a):
  print ("the number is an Automorphic ") 
 else:
 print (" The number is Not an Automorphic ")
