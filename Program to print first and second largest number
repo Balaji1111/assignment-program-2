@@ -1,0 +1,10 @@
+list=[]
+n=int(input ("enter how many scores do you want ")) 
+for i in range(n):
+  a=int(input (" Enter score one by one")) 
+  list.append(a) 
+print("the list is",list) 
+list.sort()
+print ("the sorted list is", list) 
+print("the winner score is", list[-1]) 
+print("the runner score is" , list[-2])
