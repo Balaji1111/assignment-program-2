@@ -1,0 +1,21 @@
+list=[]
+list1=[]
+list2=[]
+n=int(input("enter how many number do want to be their in   an array")) 
+for i in range(n):
+  a=int(input("enter a number one by one")) 
+  list.append(a) 
+print("the list is", list) 
+for j in list:
+   if(j==2):
+      list1.append(j)  
+   else:
+       for k in range(2, j):
+            if (j%k==0):
+               list2.append(j)
+               break
+       else:
+          list1.append(j) 
+print("the prime number array is", list1) 
+print("the non-prime number array is ",list2) 
+print(list1+list2)
