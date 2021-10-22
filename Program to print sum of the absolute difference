@@ -1,0 +1,17 @@
+list=[]
+list1=[]
+n=int(input("enter a how many number want to be their in a list")) 
+b=0
+for i in range(n):
+  a=int(input("enter number one by one")) 
+  list.append(a) 
+print("the list is",list) 
+list.sort() 
+print("the sorted list is", list) 
+for i in range(1,n):
+   c=abs(list[i-1]-list[i]) 
+   list1.append(c) 
+print("the absolute difference is",list1) 
+for j in list1:
+  b=b+j
+print("the sum of the absolute difference is", b)
