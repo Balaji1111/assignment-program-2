@@ -1,0 +1,31 @@
+N=int(input("Enter Your Number : "))
+k=len(str(N));
+n=N;
+nn=0;
+op=0;
+A=[];
+B=[];
+a,b,s,a1,b1,s1=0,0,0,0,0,0;
+temp=N;
+for i in range(0,k):
+    a=n%10;
+    s=s+a;
+    b=n-a;
+    n=int(b/10);
+for j in range(0,51):
+    temp+=1;
+    A.append(temp);
+for a in range(0,51):
+    op=A[a];
+    nn=op;
+    for b in range(0,k):
+        a1=nn%10;
+        s1=s1+a1;
+        b1=nn-a1;
+        nn=int(b1/10);
+    B.append(s1);
+    s1=0;
+for c in range(0,51):
+    if(s==B[c]):
+        print("Output : ",A[c]);
+        break;
