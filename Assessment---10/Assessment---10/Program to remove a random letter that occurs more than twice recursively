@@ -1,0 +1,25 @@
+
+A=[];
+l=[];
+N=" "
+N=input("Enter Your String :")
+a,b,z,k=0,0,0,0;
+op=" "
+n=len(str(N));
+for a in range(0,n):
+    l.append(N[a]);
+for i in range(0,n-2):
+    a=i;
+    if(N[i]==N[i+1]):
+        if(N[i+1]==N[i+2]):
+            A.append(a);
+b=len(A);
+for j in range(0,b):
+    z=A[j]-k;
+    op=str(l[z]);
+    l.remove(op);
+    k+=1;
+m=' '.join(l);
+print(" Your Output String is : ",m);
+    
+
